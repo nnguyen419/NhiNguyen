@@ -1,0 +1,95 @@
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.title{
+  padding-top: 20px;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  background: linear-gradient(300deg, #3081D0, #C5FFF8, #FF9800);
+  background-size: 180% 180%;
+  animation: gradient-animation 12s ease infinite;
+  clip-path: inset(0 -100vmax);
+  justify-content: space-between;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding-right: 250px;
+  margin-left:auto;
+  width:800px;
+  align-items: left;
+}
+
+.picture {
+  height: 270px;
+  width: auto;
+  margin-left: 70px;
+  padding-left: 40px;
+  padding-bottom :20px;
+  float:left;
+}
+
+button {
+  font-size: 18px;
+  background-color: #3468C0;
+  color : white;
+  border-color: #86A7FC;
+  border-style: solid;
+  border-width: 2px;
+  height: 50px;
+  width: 150px;
+  margin-right: 18px;
+  border-radius: 16px;
+  cursor: pointer; 
+  padding-bottom: 5px;
+  padding-top: 5px;
+  transition: box-shadow 0.10s;
+  margin-bottom: 20px;
+}
+
+.click{
+  text-align: center;
+}
+
+button:hover{
+  transform: scale(1.1);
+  box-shadow: 10px 10px 10px rgba(134, 167, 252, 0.5) ;
+}
+
+.quote{
+  margin-top: 70px;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.footer{
+  font-size: 13px;
+  align-items: center;
+  position:absolute;
+  bottom:10px;
+  left:50%;
+  transform: translateX(-50%);
+  z-index:10;
+}
